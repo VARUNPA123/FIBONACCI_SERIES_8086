@@ -1,8 +1,7 @@
-# Arithmetic-operation-using-8086
-# 8086 Assembly Language Programs for Arithmetic Operations
+# FIBONACCI SERIES USING 8086 MICROPROCESSOR
 
 ## AIM
-To write and execute Assembly Language Programs to perform arithmetic operations for the 8086 microprocessor.
+To write an assembly language program in 8086 to generate the Fibonacci Series up to N terms and store the sequence in memory.
 
 ## APPARATUS REQUIRED
 Personal Computer with MASM Software
