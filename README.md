@@ -6,8 +6,7 @@ To write an assembly language program in 8086 to generate the Fibonacci Series u
 ## APPARATUS REQUIRED
 Personal Computer with MASM Software
 
-## 1. ADDITION
-#### Algorithm
+## ALGORITHM
 1. Initialize memory location in HL register.
 2. Store 1st data.
 3. Increment HL to enter 2nd data.
@@ -22,7 +21,7 @@ Personal Computer with MASM Software
 <img width="707" height="1024" alt="image" src="https://github.com/user-attachments/assets/b5a7062d-e294-47cd-9683-a40de25e82de" />
 
 
-#### Program
+## PROGRAM
 ```asm
 CODE SEGMENT
 ASSUME CS: CODE, DS: CODE
@@ -43,7 +42,7 @@ CODE ENDS
 END
 ```
 
-#### Output Table
+## Output Table
 | MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
 | ----------------------- | ------------------------ |
 | 1200:12                 | 1204:24                  |
@@ -52,7 +51,7 @@ END
 | 1203:34                 | 1207:C4                  |
 
 
-#### Manual Calculations
+## Manual Calculations
 <img width="1600" height="824" alt="image" src="https://github.com/user-attachments/assets/8414af0c-263e-4407-b710-e2ec6d97b9f1" />
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
