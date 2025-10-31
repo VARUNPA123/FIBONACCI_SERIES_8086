@@ -6,20 +6,30 @@ To write an assembly language program in 8086 to generate the Fibonacci Series u
 ## APPARATUS REQUIRED
 Personal Computer with MASM Software
 
-## ALGORITHM
-1. Initialize memory location in HL register.
-2. Store 1st data.
-3. Increment HL to enter 2nd data.
-4. Move 2nd number to accumulator.
-5. Decrement HL.
-6. Add value in memory with accumulator.
-7. Store result.
-8. Stop.
+## PROBLEM ANALYSIS
+The first and second term of the Fibonacci series are 00 and 01. The third element is given by the sum of the first and second element. The fourth element is given by sum of second and third element, and so on. In general, an element of fibonacci series is given by sum of immediate two previous element.
 
+## ALGORITHM
+1. Set SI-register as pointer for Fibonacci series.
+2. Set CL-register as count for number of elements to be generated.
+3. Increment the pointer (SI).
+4. Initialize the first element of Fibonacci series as 00H in AL-register.
+5. Store first element in memory.
+6. Increment the pointer (SI).
+7. Increment AL to get second element (01H) of Fibonacci series in AL-register.
+8. Store the second element in memory.
+9. Decrement the count (CL-register) by 02.
+10. Decrement the pointer (SI).
+11. Get the element prior to last generated element in AL.
+12. Get the last generated element in BL.
+13. Add the previous two elements (AL and BL) to get the next element in AL.
+14. Increment the pointer.
+15. Store the next element (AL) of the Fibonacci series in memory.
+16. Decrement the count (CL).
+17. If the content of CL is not zero then go to step 10, otherwise stop.
 
 ## FLOW CHART
-<img width="707" height="1024" alt="image" src="https://github.com/user-attachments/assets/b5a7062d-e294-47cd-9683-a40de25e82de" />
-
+<img width="967" height="585" alt="image" src="https://github.com/user-attachments/assets/7dd62d35-fc40-403a-894f-cf84e620a8ac" />
 
 ## PROGRAM
 ```asm
@@ -50,9 +60,6 @@ END
 | 1202:12                 | 1206:00                  |
 | 1203:34                 | 1207:C4                  |
 
-
-## Manual Calculations
-<img width="1600" height="824" alt="image" src="https://github.com/user-attachments/assets/8414af0c-263e-4407-b710-e2ec6d97b9f1" />
 
 ## OUTPUT IMAGE FROM MASM SOFTWARE
 
