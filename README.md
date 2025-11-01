@@ -31,6 +31,11 @@ The first and second term of the Fibonacci series are 00 and 01. The third eleme
 ## FLOW CHART
 <img width="967" height="585" alt="image" src="https://github.com/user-attachments/assets/7dd62d35-fc40-403a-894f-cf84e620a8ac" />
 
+
+
+
+
+
 ## PROGRAM
 ```asm
 DATA SEGMENT
@@ -69,14 +74,23 @@ CODE ENDS
     END START
 ```
 
+
+
+
+
+
 ## OUTPUT IMAGE FROM MASM SOFTWARE
 
 <img width="643" height="397" alt="image" src="https://github.com/user-attachments/assets/b4be7f7f-8784-4375-8d5e-c9ccfa68968f" />
+
+
+
 <img width="643" height="222" alt="image" src="https://github.com/user-attachments/assets/a2186cb3-f924-41f5-8dc0-a3d04ded28ad" />
 
 
-<img width="636" height="395" alt="image" src="https://github.com/user-attachments/assets/25564b43-eff1-498e-a494-24fcd2fd8068" />
 
+
+<img width="636" height="395" alt="image" src="https://github.com/user-attachments/assets/25564b43-eff1-498e-a494-24fcd2fd8068" />
 
 ## RESULT
 Thus, the Assembly Language Program for 8086 to generate the Fibonacci Series up to N terms and store the sequence in memory was successfully written and executed using MASM.
