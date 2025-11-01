@@ -4,8 +4,10 @@
 To write an assembly language program in 8086 to generate the Fibonacci Series up to N terms and store the sequence in memory.
 
 ## APPARATUS REQUIRED
-   Personal Computer
-MASM Software
+
+
+1. Personal Computer
+2. MASM Software
 
 ## PROBLEM ANALYSIS
 The first and second term of the Fibonacci series are 00 and 01. The third element is given by the sum of the first and second element. The fourth element is given by sum of second and third element, and so on. In general, an element of fibonacci series is given by sum of immediate two previous element.
