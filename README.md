@@ -33,23 +33,40 @@ The first and second term of the Fibonacci series are 00 and 01. The third eleme
 
 ## PROGRAM
 ```asm
+DATA SEGMENT
+    COUNT DB 10
+    SERIES DB 10 DUP(0)
+DATA ENDS
+
 CODE SEGMENT
-ASSUME CS: CODE, DS: CODE
-ORG 1000H
-MOV SI,2000H
-MOV CL,00H
-MOV AX,[SI]
-MOV BX,[SI+02H]
-ADD AX,BX
-JNC L1
-INC CL
-L1:
-MOV [SI+04H],AX
-MOV [SI+06H],CL
-MOV AH,4CH
-INT 21H
+    ASSUME CS:CODE, DS:DATA
+START:           
+    MOV AX, DATA
+    MOV DS, AX
+    LEA SI, SERIES
+    MOV CL, [COUNT]
+    MOV AL, 00H
+    MOV [SI], AL
+    INC SI
+    INC AL
+    MOV [SI], AL
+    SUB CL, 02H
+    JZ  STOP_PROGRAM
+LOOP_START:
+    DEC SI
+    MOV AL, [SI]
+    INC SI
+    MOV BL, [SI]
+    ADD AL, BL
+    INC SI
+    MOV [SI], AL
+    DEC CL
+    JNZ LOOP_START
+STOP_PROGRAM:
+    MOV AH, 4CH
+    INT 21H
 CODE ENDS
-END
+    END START
 ```
 
 ## Output Table
