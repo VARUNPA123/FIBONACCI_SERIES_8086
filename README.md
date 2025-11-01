@@ -69,20 +69,14 @@ CODE ENDS
     END START
 ```
 
-## Output Table
-| MEMORY LOCATION (INPUT) | MEMORY LOCATION (OUTPUT) |
-| ----------------------- | ------------------------ |
-| 1200:12                 | 1204:24                  |
-| 1201:34                 | 1205:68                  |
-| 1202:12                 | 1206:00                  |
-| 1203:34                 | 1207:C4                  |
-
-
 ## OUTPUT IMAGE FROM MASM SOFTWARE
 
 <img width="643" height="397" alt="image" src="https://github.com/user-attachments/assets/b4be7f7f-8784-4375-8d5e-c9ccfa68968f" />
 <img width="643" height="222" alt="image" src="https://github.com/user-attachments/assets/a2186cb3-f924-41f5-8dc0-a3d04ded28ad" />
 
 
+<img width="636" height="395" alt="image" src="https://github.com/user-attachments/assets/25564b43-eff1-498e-a494-24fcd2fd8068" />
+
+
 ## RESULT
-Thus, the Assembly Language Programs for 8086 to perform arithmetic operations (Addition, Subtraction, Multiplication, and Division) using both direct and indirect methods were successfully written and executed using MASM.
+Thus, the Assembly Language Program for 8086 to generate the Fibonacci Series up to N terms and store the sequence in memory was successfully written and executed using MASM.
