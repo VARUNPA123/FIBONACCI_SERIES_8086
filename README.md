@@ -32,9 +32,7 @@ The first and second term of the Fibonacci series are 00 and 01. The third eleme
 17. If the content of CL is not zero then go to step 10, otherwise stop.
 
 ## FLOW CHART
-<img width="624" height="580" alt="image" src="https://github.com/user-attachments/assets/0d4c97ef-f9db-4ba9-8ef0-a5c89b169036" />
-
-
+<img width="733" height="581" alt="image" src="https://github.com/user-attachments/assets/8748bff2-c5d6-4c7a-93a2-c946e794a8a0" />
 
 
 
