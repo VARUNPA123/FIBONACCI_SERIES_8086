@@ -9,9 +9,6 @@ To write an assembly language program in 8086 to generate the Fibonacci Series u
 1. Personal Computer
 2. MASM Software
 
-## PROBLEM ANALYSIS
-The first and second term of the Fibonacci series are 00 and 01. The third element is given by the sum of the first and second element. The fourth element is given by sum of second and third element, and so on. In general, an element of fibonacci series is given by sum of immediate two previous element.
-
 ## ALGORITHM
 1. Set SI-register as pointer for Fibonacci series.
 2. Set CL-register as count for number of elements to be generated.
